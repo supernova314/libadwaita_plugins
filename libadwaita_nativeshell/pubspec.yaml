@@ -2,6 +2,7 @@ name: libadwaita_nativeshell
 description: A libadwaita package for providing an extension to AdwActions for nativeshell package
 version: 0.5.2+1
 repository: https://github.com/gtk-flutter/libadwaita_plugins/tree/main/libadwaita_nativeshell
+publish_to: none
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -10,10 +11,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  libadwaita_core: ">=0.5.3 <1.0.0"
+  libadwaita_core: 
+    git: 
+      url: git@github.com:supernova314/libadwaita_plugins.git
+      path: libadwaita_core
   nativeshell: ">=0.1.13 <1.0.0"
 
 dev_dependencies: 
-  very_good_analysis: ^2.4.0
+  very_good_analysis: ^4.0.0
 
 flutter:

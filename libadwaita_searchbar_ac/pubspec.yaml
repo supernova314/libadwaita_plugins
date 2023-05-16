@@ -2,6 +2,7 @@ name: libadwaita_searchbar_ac
 description: A libadwaita package to get a search bar with autocomplete, based on easy_autocomplete
 version: 0.5.8
 repository: https://github.com/gtk-flutter/libadwaita_plugins/tree/main/libadwaita_searchbar_ac
+publish_to: none
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -11,9 +12,12 @@ dependencies:
   easy_autocomplete: ">=1.6.0 <2.0.0"
   flutter:
     sdk: flutter
-  libadwaita_searchbar: ">=0.5.7 <1.0.0"
+  libadwaita_searchbar: 
+    git: 
+      url: git@github.com:supernova314/libadwaita_plugins.git
+      path: libadwaita_searchbar
 
 dev_dependencies:
-  very_good_analysis: ^2.4.0
+  very_good_analysis: ^4.0.0
 
 flutter:
